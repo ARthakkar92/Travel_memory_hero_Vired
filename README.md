@@ -1,6 +1,7 @@
 # Travel_memory_hero_Vired
 # The TravelMemory application is a MERN stack application deployed on AWS infrastructure using:  
 Amazon EC2  
+Amazon Machine Images (AMI)
 Application Load Balancer (ALB)  
 Nginx Reverse Proxy  
 MongoDB Atlas  
@@ -61,7 +62,13 @@ server {
 
 <img width="1386" height="178" alt="image" src="https://github.com/user-attachments/assets/85368480-732a-47ad-897c-87427f68d83c" />
 
-## Backend Load Balancer
+## Backend AMI image.
+After configuring the initial backend EC2 instances, Amazon Machine Images (AMI) were created to replicate the configured environment.
+
+<img width="1874" height="885" alt="image" src="https://github.com/user-attachments/assets/190d80d9-2b81-4141-be04-de0104deee99" />
+
+
+## Backend Load Balancer Target Group
 Target group port: 80
 
 Health check path: /hello
@@ -86,7 +93,13 @@ npm run build
 
 <img width="1033" height="355" alt="image" src="https://github.com/user-attachments/assets/833f5329-b4a3-4665-b6bc-14a2ec6bc599" />
 
-## Frontend Load Balancer
+## Frontend AMI image.
+After configuring the initial frontend EC2 instances, Amazon Machine Images (AMI) were created to replicate the configured environment.
+
+<img width="1879" height="857" alt="image" src="https://github.com/user-attachments/assets/07231b8e-0ea7-41da-88cf-f0d0af8ced58" />
+
+
+## Frontend Load Balancer Target Group
 
 Target group port: 80
 
